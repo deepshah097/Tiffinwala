@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:p="http://www.springframework.org/schema/p" 
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+ <context:component-scan base-package="com" />
+ 
+ <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		  <property name="prefix" value="WEB-INF/view/" /> 
+		  <property name="suffix" value=".jsp" /> 
+  	</bean>
+  	
+  	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    <property name="maxUploadSize" value="100000000"/>
+     </bean>
+     
+     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		  <property name="dataSource" ref="dataSource" /> 
+		  <property name="annotatedClasses">
+		  			<list>
+				  		<value>com.vo.CityVo</value>
+				  		<value>com.vo.TypeVo</value>
+				  		<value>com.vo.UserVo</value>
+				  		<value>com.vo.TiffinVo</value>
+				  		<value>com.vo.MenuVo</value>	
+				  		<value>com.vo.OrderVo</value>				  		
+		 			</list>
+		 </property>
+		 
+		 <property name="hibernateProperties">
+			 	<props>
+					  <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop> 
+					  <prop key="hibernate.show_sql">true</prop> 
+					  <prop key="hibernate.hbm2ddl.auto">update</prop> 
+			  	</props>
+	        </property>
+    </bean>
+    
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://edufocus.db.9462939.hostedresource.com:3306/edufocus"/> <!-- ?CreateDatabaseIfNotExist=True -->
+        <property name="username" value="edufocus"/>
+        <property name="password" value="Ddrr@9898"/>
+    </bean>
+    
+</beans>
