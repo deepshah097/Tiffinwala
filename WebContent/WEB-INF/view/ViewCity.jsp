@@ -190,7 +190,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                     <tr>
                                       <th>City Id</th>
                                       <th>City Name</th>                                   
-                                      <th colspan="2">Action</th>
+                                      <th>Approve</th>
+                                      <th>Disapprove</th>
                                   </tr>
                               </thead>
                               <tbody>
@@ -215,24 +216,12 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     
      <div class="clearfix"> </div>
 </div>
-<!--main page chit chating end here-->
-<!---728x90--->
-
-<!--main page chart start here-->
-<!--main page chart layer2-->
-
-<!--climate start here-->
-<!--climate end here-->
 </div>
-<!--inner block end here-->
-<!---728x90--->
 
 </div>
 </div>
-<!--slider menu-->
    
 </div>
-<!--slide bar menu end here-->
 <script>
 var toggle = true;
             

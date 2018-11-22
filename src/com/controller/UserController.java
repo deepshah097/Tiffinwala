@@ -169,10 +169,7 @@ public class UserController {
 		userlist1=this.userdao.searchbyuserid(id);
 		for(int j=0;j<userlist1.size();j++) {
 			 uservo1=(UserVo) userlist1.get(j);
-			 
-			 
 		}
-		//System.out.println("hello"+uservo1.getUser_password());
 		
 		if(oldpass.equals(""+uservo1.getUser_password())) {
 			
@@ -184,7 +181,7 @@ public class UserController {
 					System.out.println("aaaa"+a);
 					
 					if(a>0) {
-						return "tiffinwalaindex";
+						return "changepassword";
 						//System.out.println("success");
 						
 					}

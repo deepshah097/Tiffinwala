@@ -12,12 +12,14 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.dao.OrderDao;
 import com.dao.TiffinDao;
 import com.dao.UserDao;
 import com.mysql.fabric.Response;
@@ -32,6 +34,8 @@ public class LoginController {
 	UserDao userdao;
 	@Autowired
 	TiffinDao tiffindao;
+	@Autowired
+	OrderDao orderdao;
 	
 	
 	@RequestMapping(value="/loginpage.htm",method=RequestMethod.GET)
@@ -40,12 +44,18 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="/indextiffinwala.htm",method=RequestMethod.GET)
-	public String showtiffinwalapage() {
-		return("tiffinwalaindex");
+	public ModelAndView showtiffinwalapage(@RequestParam("id")int id) {
+		List orderlist=new ArrayList();
+		List tiffinlist=new ArrayList();
+		tiffinlist=this.tiffindao.search(id);
+		TiffinVo t=(TiffinVo)tiffinlist.get(0);
+		orderlist=this.orderdao.searchpendingorder(t.getTiffin_id());
+		return new ModelAndView("tiffinwalaindex","orderlist",orderlist);
+//		return("tiffinwalaindex");
 	}
 	
 	@RequestMapping(value="/login.htm",method=RequestMethod.POST)
-	public String Login(HttpServletRequest req,HttpServletResponse res,HttpSession session)
+	public ModelAndView Login(HttpServletRequest req,HttpServletResponse res,HttpSession session)
 	{
 		
 		String username=req.getParameter("username");
@@ -59,31 +69,28 @@ public class LoginController {
 				if(uservo.getUser_flag()==1) {
 				session=req.getSession();
 				session.setAttribute("user", uservo);	
-				return ("index");	
+				return new ModelAndView("redirect:/index.htm");	
 				}
 				else if(uservo.getUser_flag()==2) {
 					session=req.getSession();
 					session.setAttribute("user", uservo);	
-					return ("tiffinwalaindex");	
+					return new ModelAndView("redirect:/indextiffinwala.htm","id",uservo.getUser_id());	
 					}
 				else if(uservo.getUser_flag()==3) {
-//					session=req.getSession();
-//					session.setAttribute("user", uservo);	
-//					return ("userindex");	
 					req.setAttribute("loginError", "You will be Authenticate soon...");
-					return("Login");
+					return new ModelAndView("Login","loginError","You will be Authenticate soon...");					
 					}
 				
 				
 				else {
 					req.setAttribute("loginError", "Enter valid Username and Password");
-					return("Login");
+					return new ModelAndView("Login","loginError","Enter valid Username and Password");
 				}
 			}
 			
 		}
 		req.setAttribute("loginError", "Enter valid Username and Password");
-		return("Login");
+		return new ModelAndView("Login","loginError","Enter valid Username and Password");
 		
 		
 	
@@ -101,13 +108,6 @@ public class LoginController {
 		int city=Integer.parseInt(req.getParameter("tiffincity"));
 		int userid=Integer.parseInt(req.getParameter("uservo_user_id"));
 		
-		System.out.println("name----------------"+email);
-		System.out.println("name----------------"+address);
-		System.out.println("name----------------"+mobile);
-		System.out.println("name----------------"+name);
-		System.out.println("name----------------"+pincode);
-		System.out.println("name----------------"+city);
-		System.out.println("name----------------"+userid);
 		CityVo cvo=new CityVo();
 		cvo.setCity_id(city);
 		UserVo uvo=new UserVo();

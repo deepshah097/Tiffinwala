@@ -88,20 +88,18 @@ public class OrderController {
 	public ModelAndView viewpendingorders(@RequestParam("id")int id)
 	
 	{
-		//System.out.println("updated"+);
-//		List orderlist=new ArrayList();
-//		orderlist=this.orderdao.viewpastorder(id);
+	
 		List orderlist=new ArrayList();
 		List tiffinlist=new ArrayList();
 		tiffinlist=this.tiffindao.search(id);
 		TiffinVo t=(TiffinVo)tiffinlist.get(0);
 		orderlist=this.orderdao.searchpendingorder(t.getTiffin_id());
-		return new ModelAndView("ViewPendingOrder","orderlist",orderlist);
+		return new ModelAndView("ViewPendingOrder","orderlist",orderlist).addObject("idd", id);
 		
 	}
 	
 	@RequestMapping(value="/approvependingorder.htm",method=RequestMethod.GET)
-	public String approvependingorders(@RequestParam("id")int id)
+	public ModelAndView approvependingorders(@RequestParam("id")int id,@RequestParam("tid1")int tid)
 	
 	{
 		//System.out.println("updated"+);
@@ -110,12 +108,13 @@ public class OrderController {
 		List orderlist=new ArrayList();
 		int orderlist1=this.orderdao.updatependingorderflag(id);
 		System.out.println("approved..........   "+orderlist1);
-		return "tiffinwalaindex";
+		System.out.println("-------------------"+tid);
+		return new ModelAndView("redirect:/Viewpendingorder.htm?id="+tid);
 		
 	}
 	
 	@RequestMapping(value="/disapprovependingorder.htm",method=RequestMethod.GET)
-	public String disapprovependingorders(@RequestParam("id")int id)
+	public ModelAndView disapprovependingorders(@RequestParam("id")int id,@RequestParam("tid1")int tid)
 	
 	{
 		//System.out.println("updated"+);
@@ -124,7 +123,7 @@ public class OrderController {
 		List orderlist=new ArrayList();
 		int orderlist1=this.orderdao.updatedispendingorderflag(id);
 		System.out.println("approved..........   "+orderlist1);
-		return "tiffinwalaindex";
+		return new ModelAndView("redirect:/Viewpendingorder.htm?id="+tid);
 		
 	}
 	

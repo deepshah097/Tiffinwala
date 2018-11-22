@@ -198,10 +198,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<!-- /script-for sticky-nav -->
 <!--inner block start here-->
 <div class="inner-block">
-<!--market updates end here-->
-<!---728x90--->
-
-<!--mainpage chit-chating-->
 <div class="chit-chat-layer1">
 	<div class="col-md-12 chit-chat-layer1-left">
                <div class="work-progres">
@@ -215,24 +211,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                       <th>Order Id</th>
                                       <th>Order Amount</th>
                                       <th>Order Date</th>                                   
-                                      <!-- <th>Order Flag</th> -->                                   
-                                                        
-<!--<td>Order Id
-<td>Order Amount
-<td>Order Date
-<td>Order Flag
-<td>Order Qty
-<td>Menu
-<td>Tiffinwala
-<td>User
-  -->                                                                       
                                       <th>Order Qty</th>
                                       <th>Menu</th>
-                <!--                       <th>Tiffinwala</th> -->
                                       <th>User</th>
-                                                                            
-                                      <!-- <th>Flag</th> -->
-                                      
                                   </tr>
                               </thead>
                               <tbody>
@@ -242,10 +223,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 									<td>${n.order_id}</td>
 									<td>${n.order_amount}</td>
 									<td>${n.order_date}</td>
-									<%-- <td>${n.order_flag}</td> --%>
 									<td>${n.order_qty}</td>
 									<td>${n.menuvo.menu_items}</td>
-									<%-- <td>${n.tiffinvo.tiffin_id}</td> --%>
 									<td>${n.uservo.user_name}</td>
 
                               </tr>
@@ -259,25 +238,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
       </div>
     
      <div class="clearfix"> </div>
-<%--      <center>
- --%></div>
-<!--main page chit chating end here-->
-<!---728x90--->
-
-<!--main page chart start here-->
-<!--main page chart layer2-->
-
-<!--climate start here-->
-<!--climate end here-->
 </div>
-<!--inner block end here-->
-<!---728x90--->
-
-<!--copy rights start here-->
-<div class="copyrights">
-	 <p>© All Rights Reserved </p>
-</div>	
-<!--COPY rights end here-->
+</div>
 </div>
 </div>
 <!--slider menu-->

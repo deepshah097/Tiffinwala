@@ -149,17 +149,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			</div>
       </div>
 </div>
-<!--inner block end here-->
-<!---728x90--->
 
-<!--copy rights start here-->
-<div class="copyrights">
-	 <p>© 2018. All Rights Reserved </p>
-</div>	
-<!--COPY rights end here-->
-<!---728x90--->
-
-<!--scrolling js-->
 		<script src="./js/jquery.nicescroll.js"></script>
 		<script src="./js/scripts.js"></script>
 		<!--//scrolling js-->
@@ -167,7 +157,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <!-- mother grid end here-->
 </body>
 
-<!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:59:10 GMT -->
 </html>
 
 

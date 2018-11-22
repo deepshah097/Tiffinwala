@@ -148,15 +148,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <div class="clearfix"> </div>
 
 </div>
-<!--inner block end here-->
-<!---728x90--->
-
-<!--copy rights start here-->
-	
-<!--COPY rights end here-->
 </div>
 </div>
-<!--slide bar menu end here-->
 <script>
 var toggle = true;
             
@@ -181,49 +174,6 @@ $(".sidebar-icon").click(function() {
 		<script src="js/scripts.js"></script>
 		<!--//scrolling js-->
 <script src="js/bootstrap.js"> </script>
-<!-- mother grid end here-->
 </body>
 
-<!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:58:26 GMT -->
 </html>                     
-<%-- <%@page import="com.vo.TypeVo"%>
-<%@page import="java.util.List"%>
-<%@page import="com.vo.TiffinVo"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<%@include file="adminheader.jsp" %>
-<% Integer tid=(Integer)session.getAttribute("tid");
-List typels=(List)session.getAttribute("typelist");
-%>
-<body>
-
-<center>
-<a href="ViewPastMenu.htm?id=<%=tid%>">view past menu</a><br>
-<a href="ViewCurrentMenu.htm?id=<%=tid%>">view Current menu</a>
-
-<form action="savemenu.htm" method="post">
-<br><br>
-				<input type="text" name="menuitems" placeholder="Enter menu item" required=""><br><br>
-				<input type="text" name="menuprice" placeholder="Enter Price" required=""><br><br>
-				<textarea row="5" col="5" name="menudesc" placeholder="Enter desc" required=""></textarea>
-				<br>
-				<select name="menutype"><%for(int i=0;i<typels.size();i++){ 
-					TypeVo ct=(TypeVo)typels.get(i); %>
-				<option value="<%=ct.getType_id() %>"><%=ct.getType_name()%></option>
-				<%} %></select><br><br>
-				 <br>
-				 <input type="hidden" name="tiffinvo_tiffin_id" value="<%=tid %>" required="">
-				<input type="submit" name="Sign In" value="Update Menu">	
-</form>
-</center>
-</body>
-</html>
-
-
- --%>

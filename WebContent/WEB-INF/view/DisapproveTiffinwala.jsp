@@ -226,18 +226,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     
      <div class="clearfix"> </div>
 </div>
-<!--main page chit chating end here-->
-<!---728x90--->
-
-<!--main page chart start here-->
-<!--main page chart layer2-->
-
-<!--climate start here-->
-<!--climate end here-->
 </div>
-<!--inner block end here-->
-<!---728x90--->
-
 </div>
 </div>
 <!--slider menu-->

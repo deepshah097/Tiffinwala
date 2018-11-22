@@ -41,9 +41,6 @@
 <td>${n.tiffinvo.tiffin_id}</td>
 <td>${n.uservo.user_id}</td>
 
-<%-- <td><a href="approveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}">Approve</a></td>
-<td><a href="disapproveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}">Disapprove</a></td>
- --%>
 
 
 </tr>

@@ -103,12 +103,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			</div>
       </div>
 </div>
-<!--inner block end here-->
-<!---728x90--->
-
-<!---728x90--->
-
-<!--scrolling js-->
 		<script src="./js/jquery.nicescroll.js"></script>
 		<script src="./js/scripts.js"></script>
 		<!--//scrolling js-->

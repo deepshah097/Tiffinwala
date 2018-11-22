@@ -158,17 +158,14 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<div class="header-left" style="background:#650101">
 							<div class="logo-name">
 							<%if(uservo.getUser_flag()==1){ %>
-									 <a href="index.htm"> <h1 style="color:white">Admin</h1>
+									 <!-- <a href="index.htm"> <h1 style="color:white">Admin</h1> -->
 									  
 									  
-									<!--<img id="logo" src="" alt="Logo"/>--> 
-								  </a>
+									<img id="logo" src="./images/TIFFINWALAA.jpg" height="42px" width="62px" alt="Logo"/> 
+								  
 								  <%}else { %>
-								   <a href="#"> <h1 style="color:white">TiffinWala</h1>
-									  
-									  
-									<!--<img id="logo" src="" alt="Logo"/>--> 
-								  </a><%} %> 								
+								   <img id="logo" src="./images/TIFFINWALAA.jpg" height="42px" width="62px" alt="Logo"/>
+								   <%} %> 								
 							</div>
 							<%-- <%if(uservo.getUser_flag()==1){ %>
 							<button style="background:blue;margin-top:10px;border-radius: 20px;"><a href="addAdmin.htm" style="color:white">Add New Admin</a></button>
@@ -279,7 +276,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		        <li id="menu-home" ><a href="Viewalluser.htm"><i class="fa fa-user"></i><span>Active All User</span></a></li>
 		        <li id="menu-home" ><a href="Viewapprovetiffinwala.htm"><i class="fa fa-toggle-on"></i><span>Active Tiffinwala</span></a></li>
 		        <li id="menu-home" ><a href="Viewpendingtiffinwala.htm"><i class="fa fa-paper-plane"></i><span>Pending Tiffinwala</span></a></li>		      
-		        <li id="menu-home" ><a href="Viewdisapprovetiffinwala.htm"><i class="fa fa-toggle-off"></i><span>Disaproved Tiffinwala</span></a></li>
+		        <li id="menu-home" ><a href="Viewdisapprovetiffinwala.htm"><i class="fa fa-ban"></i><span>Disaproved Tiffinwala</span></a></li>
 		        <li><a href="#"><i class="fa fa-table"></i><span>Tables</span><span class="fa fa-angle-right" style="float: right"></span></a>
 		        	 <ul id="menu-academico-sub" >
 			            <li id="menu-academico-avaliacoes" ><a href="ViewCity.htm">City</a></li>
@@ -294,7 +291,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	 <div class="sidebar-menu" style="background: #650101">
 		    <div class="menu">
 		      <ul id="menu" >
-		        <li id="menu-home" ><a href="indextiffinwala.htm"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+		        <li id="menu-home" ><a href="indextiffinwala.htm?id=<%=uservo.getUser_id() %>"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
 		        <li id="menu-home" ><a href="addmenu.htm?id=<%=uservo.getUser_id() %>"><i class="fa fa-user"></i><span>Menu Update</span></a></li>
 		        <li id="menu-home" ><a href="ViewOrder.htm?id=<%=uservo.getUser_id() %>"><i class="fa fa-tachometer"></i><span>Today's orders</span></a></li>
 		      <li id="menu-home" ><a href="Viewpastorders.htm?id=<%=uservo.getUser_id() %>"><i class="fa fa-tachometer"></i><span>Past orders</span></a></li>

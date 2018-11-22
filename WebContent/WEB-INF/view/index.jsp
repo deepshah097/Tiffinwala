@@ -228,7 +228,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                       <th>Mobile Number</th>
                                       <th>Email</th>
                                       
-                                      <th colspan="2">Action</th>
+                                      <th>Approve</th>
+                                      <th>Disapprove</th>
                                   </tr>
                               </thead>
                               <tbody>
@@ -237,16 +238,13 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                   
 									<td>${n.tiffin_id}</td>
 									<td>${n.tiffin_name}</td>
-									<%-- <td>${n.cityvo.city_id}</td> --%>
 									<td>${n.cityvo.city_name}</td>
 									<td>${n.tiffin_address}</td>
 									<td>${n.tiffin_pincode}</td>
 									<td>${n.tiffin_mobile}</td>
 									<td>${n.tiffin_email}</td>
-									<%-- <td>${n.tiffin_flag}</td> --%>
-									<td><a href="approveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}">Approve</a></td>
-									<td><a href="disapproveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}">Disapprove</a></td>
-
+									<td><a href="approveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}"><i class="fa fa-check" style="color:black;"></i></a></td>
+									<td><a href="disapproveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}"><i class="fa fa-close" style="color:black;"></i></a></td>
                                   
                               </tr>
                               

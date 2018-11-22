@@ -1,31 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 
@@ -198,37 +173,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<!-- /script-for sticky-nav -->
 <!--inner block start here-->
 <div class="inner-block">
-<!--market updates updates-->
-	 <%-- <div class="market-updates">
-			<div class="col-md-6 market-update-gd">
-				<div class="market-update-block clr-block-1">
-					<div class="col-md-8 market-update-left">
-						<h3>${useractivelist}</h3>
-						<h4>Total Active User</h4>
-					</div>
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-file-text-o"> </i>
-					</div>
-				  <div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class="col-md-6 market-update-gd">
-				<div class="market-update-block clr-block-2">
-				 <div class="col-md-8 market-update-left">
-					<h3>${activetiffin }</h3>
-					<h4>Total Active Tiffin-wala</h4>
-				  </div>
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-eye"> </i>
-					</div>
-				  <div class="clearfix"> </div>
-				</div>
-			</div>
-		   <div class="clearfix"> </div>
-		</div> --%>
-<!--market updates end here-->
-<!---728x90--->
-
 <!--mainpage chit-chating-->
 <div class="chit-chat-layer1">
 	<div class="col-md-12 chit-chat-layer1-left">
@@ -240,36 +184,14 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                 <table class="table table-hover">
                                   <thead>
                                     <tr>
-        <!--                             <td>Tiffin Id
-<td>Tiffin Name
-<td>City Id
-<td>City name
-<td>Address
-<td>pincode
-<td>mobile number
-<td>email
-<td>flag
-<td colspan="2">Action -->
                                       <th>Order Id</th>
                                       <th>Order Amount</th>
                                       <th>Order Date</th>                                   
-                                      <!-- <th>Order Flag</th> -->                                   
-                                                        
-<!--<td>Order Id
-<td>Order Amount
-<td>Order Date
-<td>Order Flag
-<td>Order Qty
-<td>Menu
-<td>Tiffinwala
-<td>User
-<td colspan="2">Action</td>  -->                                                                       
                                       <th>Order Qty</th>
                                       <th>Menu</th>
-                                    <!--   <th>Tiffinwala</th> -->
                                       <th>User</th>
-                                      <!-- <th>Flag</th> -->
-                                      <th colspan="2">Action</th>
+                                      <th>Approve</th>
+                                      <th>Disapprove</th>
                                   </tr>
                               </thead>
                               <tbody>
@@ -279,13 +201,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 									<td>${n.order_id}</td>
 									<td>${n.order_amount}</td>
 									<td>${n.order_date}</td>
-									<%-- <td>${n.order_flag}</td> --%>
 									<td>${n.order_qty}</td>
 									<td>${n.menuvo.menu_items}</td>
-									<%-- <td>${n.tiffinvo.tiffin_id}</td> --%>
 									<td>${n.uservo.user_name}</td>
-									<td><button style="background:green;border-radius: 20px"><a style="color:white" href="approvependingorder.htm?id=${n.order_id}">Approve</a></td>
-									<td><button style="background:red;border-radius: 20px"><a style="color:white" href="disapprovependingorder.htm?id=${n.order_id}">Disapprove</a></td>
+									<td><a href="approvependingorder.htm?id=${n.order_id}"><i class="fa fa-check" style="color:black;"></i></a></td>
+									<td><a href="disapprovependingorder.htm?id=${n.order_id}"><i class="fa fa-close" style="color:black;"></i></a></td>
                                   
                               </tr>
                               
@@ -298,31 +218,12 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
       </div>
     
      <div class="clearfix"> </div>
-<%--      <center>
- --%></div>
-<!--main page chit chating end here-->
-<!---728x90--->
-
-<!--main page chart start here-->
-<!--main page chart layer2-->
-
-<!--climate start here-->
-<!--climate end here-->
-</div>
-<!--inner block end here-->
-<!---728x90--->
-
-<!--copy rights start here-->
-<!-- <div class="copyrights">
-	 <p>© All Rights Reserved </p>
-</div> -->	
-<!--COPY rights end here-->
 </div>
 </div>
-<!--slider menu-->
+</div>
+</div>
    
 </div>
-<!--slide bar menu end here-->
 <script>
 var toggle = true;
             
@@ -342,13 +243,9 @@ $(".sidebar-icon").click(function() {
                 toggle = !toggle;
             });
 </script>
-<!--scrolling js-->
 		<script src="./js/jquery.nicescroll.js"></script>
 		<script src="./js/scripts.js"></script>
-		<!--//scrolling js-->
 <script src="./js/bootstrap.js"> </script>
-<!-- mother grid end here-->
 </body>
 
-<!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:58:26 GMT -->
 </html>                     

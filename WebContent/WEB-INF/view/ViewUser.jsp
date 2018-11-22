@@ -216,12 +216,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
      <div class="clearfix"> </div>
 </div>
 </div>
-<!--inner block end here-->
-<!---728x90--->
-
 </div>
 </div>
-<!--slider menu-->
    
 </div>
 <!--slide bar menu end here-->

@@ -196,7 +196,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                       <th>Mobile Number</th>
                                       <th>Email</th>
        
-                                      <th colspan="2">Action</th>
+                                      <th>Approve</th>
+                                      <th>Disapprove</th>
                                   </tr>
                               </thead>
                               <tbody>
@@ -212,8 +213,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 									<td>${n.tiffin_mobile}</td>
 									<td>${n.tiffin_email}</td>
 		
-									<td><button style="background: blue;border-radius: 50px"><a style="color:white;" href="approveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}">Approve</a></button></td>
-									<td><button style="background: red;border-radius: 50px"><a style="color:white;" href="disapproveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}">Disapprove</a></button></td>
+									<td><a style="color:white;" href="approveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}"><i class="fa fa-check" style="color:black;"></i></a></td>
+									<td><a style="color:white;" href="disapproveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}"><i class="fa fa-close" style="color:black;"></i></a></td>
 
                                   
                               </tr>
@@ -228,17 +229,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     
      <div class="clearfix"> </div>
 </div>
-<!--main page chit chating end here-->
-<!---728x90--->
-
-<!--main page chart start here-->
-<!--main page chart layer2-->
-
-<!--climate start here-->
-<!--climate end here-->
 </div>
-<!--inner block end here-->
-<!---728x90--->
+
 
 </div>
 </div>

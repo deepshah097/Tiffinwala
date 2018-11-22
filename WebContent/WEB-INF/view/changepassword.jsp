@@ -109,14 +109,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								 <div class="form-group">								 
 								    <label>Enter New Password:</label>
 								    <input type="password" name="newpass" required="required" class="form-control">
-								   <!--  <input type="text" name="user_name" class="form-control" required="required">		 -->
-								   <!-- <input type="text" name="user_email" required="required" class="form-control"> -->			 
 								 </div>
 								 <div class="form-group">								 
 								    <label>Re-Enter Password</label>
 								    <input type="password" name="repass" class="form-control" required="required">
-								    <!-- <input type="text" name="user_name" class="form-control" required="required"> -->
-								    <!-- <input type="password" name="user_password" class="form-control" required="required"> -->					 
 								 </div>							
 								 <center>
 								 	<button type="submit" class="btn btn-primary">Change Password</button>
@@ -131,15 +127,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <div class="clearfix"> </div>
 
 </div>
-<!--inner block end here-->
-<!---728x90--->
-
-<!--copy rights start here-->
-	
-<!--COPY rights end here-->
 </div>
 </div>
-<!--slide bar menu end here-->
 <script>
 var toggle = true;
             

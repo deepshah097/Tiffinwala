@@ -123,12 +123,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <div class="clearfix"> </div>
 
 </div>
-<!--inner block end here-->
-<!---728x90--->
-
-<!--copy rights start here-->
-	
-<!--COPY rights end here-->
 </div>
 </div>
 <!--slide bar menu end here-->

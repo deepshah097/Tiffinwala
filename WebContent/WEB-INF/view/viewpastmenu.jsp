@@ -1,31 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 
@@ -212,33 +187,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                 <table class="table table-hover">
                                   <thead>
                                     <tr>
-        <!--                             <td>Tiffin Id
-<td>Tiffin Name
-<td>City Id
-<td>City name
-<td>Address
-<td>pincode
-<td>mobile number
-<td>email
-<td>flag
-<td colspan="2">Action -->
                                       <th>Menu Id</th>
                                       <th>Menu Items</th>
                                       <th>Price</th>                                   
                                       <th>Description</th>                                   
-                                                        
-<!--<td>Menu Id
-<td>menu items
-<td>Price
-<td>description
-<td>type name
-<td>tiffinid
-<td>current  -->                                                                       
                                       <th>Type</th>
-                      <!--                 <th>Tiffin Id</th>
-                                      <th>Current</th> -->                                      
-                                      <!-- <th>Flag</th> -->
-                                      <!-- <th colspan="2">Action</th> -->
                                   </tr>
                               </thead>
                               <tbody>
@@ -249,10 +202,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 									<td>${n.menu_items}</td>
 									<td>${n.menu_price}</td>
 									<td>${n.menu_desc}</td>
-									<td>${n.typevo.type_name}</td>
-									<%-- <td>${n.tiffinvo.tiffin_id }</td>
-									<td>${n.current }</td>
- --%>
+									<td>${n.typevo.type_name}</td>						
                               </tr>
                               
 							</c:forEach>
@@ -264,31 +214,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
       </div>
     
      <div class="clearfix"> </div>
-<%--      <center>
- --%></div>
-<!--main page chit chating end here-->
-<!---728x90--->
-
-<!--main page chart start here-->
-<!--main page chart layer2-->
-
-<!--climate start here-->
-<!--climate end here-->
-</div>
-<!--inner block end here-->
-<!---728x90--->
-
-<!--copy rights start here-->
-<div class="copyrights">
-	 <p>© All Rights Reserved </p>
-</div>	
-<!--COPY rights end here-->
 </div>
 </div>
-<!--slider menu-->
-   
 </div>
-<!--slide bar menu end here-->
+</div>
+</div>
 <script>
 var toggle = true;
             

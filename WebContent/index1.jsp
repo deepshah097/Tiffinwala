@@ -94,8 +94,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			</div>			
 			<div class="login-block">
 				<form action="login.htm" method="post">
-					<input type="email" name="username" placeholder="Email" required="">${loginError}
-					<input type="password" name="password" class="lock" placeholder="Password" required/>
+					<input type="text" name="username" placeholder="Email" required="">${loginError}
+					<input type="password" name="password" class="lock" placeholder="Password" required="">
 					<input type="submit" name="Sign In" value="Login">	
 				</form>
 			</div>

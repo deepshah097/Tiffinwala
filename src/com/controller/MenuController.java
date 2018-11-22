@@ -32,16 +32,6 @@ public class MenuController {
 	@Autowired
 	TiffinDao tiffindao;
 	
-//	@RequestMapping(value="/addmenu.htm",method=RequestMethod.GET)
-//	public ModelAndView loadtiffin(@RequestParam("id") int id,HttpServletRequest req)
-//	{
-//		List ls=this.typedao.search();
-//		List ls1=this.tiffindao.search(id);
-//		TiffinVo t=(TiffinVo)ls1.get(0);
-//		System.out.println("0000000000000000000000000000000000000000000       "+t.getTiffin_id());
-//		req.setAttribute("tiffin", t);
-//		return new ModelAndView("addmenu","menudata",new MenuVo()).addObject("typelist",ls);
-//	}
 	@RequestMapping(value="/addmenu.htm",method=RequestMethod.GET)
 	public String loadtiffin(@RequestParam("id") int id,HttpServletRequest req,HttpSession session)
 	{
@@ -53,7 +43,6 @@ public class MenuController {
 		session.setAttribute("typelist", ls);
 		System.out.println("0000000000000000000000000000000000000000000       "+t.getTiffin_id());
 		return "addmenu";
-//		return new ModelAndView("addmenu","menudata",new MenuVo()).addObject("typelist",ls);
 	}
 	
 	@RequestMapping(value="/savemenu.htm",method=RequestMethod.POST)
@@ -84,16 +73,7 @@ public class MenuController {
 		this.menudao.save(vo);
 		return "redirect:/ViewCurrentMenu.htm?id="+id;
 		
-	}
-	
-//	@RequestMapping(value="/ViewMenu.htm",method=RequestMethod.GET)
-//	public ModelAndView showmenu(@RequestParam("id")int i)
-//	{
-//		List menulist=new ArrayList();
-//		menulist=this.menudao.search(i);
-//		return new ModelAndView("viewmenu","menulist",menulist);
-//	}
-	
+	}	
 	@RequestMapping(value="/ViewPastMenu.htm",method=RequestMethod.GET)
 	public ModelAndView showpastmenu(@RequestParam("id")int i)
 	{
@@ -112,13 +92,12 @@ public class MenuController {
 	}
 	
 	@RequestMapping(value="/approvemenucurrent.htm",method=RequestMethod.GET)
-	public String updatemenuflag(@RequestParam("id")int id)
+	public ModelAndView updatemenuflag(@RequestParam("id")int id,@RequestParam("tid1")int tid)
 	
 	{
 		System.out.println("id is:"+id); 
-		System.out.println("updated"+this.menudao.approvemenuflag(id));
-		
-		return "tiffinwalaindex";
+		System.out.println("updated"+this.menudao.approvemenuflag(id));	
+		return new ModelAndView("redirect:/ViewCurrentMenu.htm?id="+tid);
 		
 	}
 	

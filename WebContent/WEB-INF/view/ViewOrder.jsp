@@ -1,31 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 
@@ -215,24 +190,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                       <th>Order Id</th>
                                       <th>Order Amount</th>
                                       <th>Order Date</th>                                   
-                                     <!--  <th>Order Flag</th> -->                                   
-                                                        
-<!--<td>Order Id
-<td>Order Amount
-<td>Order Date
-<td>Order Flag
-<td>Order Qty
-<td>Menu
-<td>Tiffinwala
-<td>User
-  -->                                                                       
                                       <th>Order Qty</th>
                                       <th>Menu</th>
-                                      <!-- <th>Tiffinwala</th> -->
-                                      <th>User</th>
-                                                                            
-                                      <!-- <th>Flag</th> -->
-                                      
+                                      <th>User</th>                                                                                                                 
                                   </tr>
                               </thead>
                               <tbody>
@@ -242,10 +202,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 									<td>${n.order_id}</td>
 									<td>${n.order_amount}</td>
 									<td>${n.order_date}</td>
-									<%-- <td>${n.order_flag}</td> --%>
 									<td>${n.order_qty}</td>
 									<td>${n.menuvo.menu_items}</td>
-									<%-- <td>${n.tiffinvo.tiffin_id}</td> --%>
 									<td>${n.uservo.user_name}</td>
 
                               </tr>
@@ -259,25 +217,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
       </div>
     
      <div class="clearfix"> </div>
-<%--      <center>
- --%></div>
-<!--main page chit chating end here-->
-<!---728x90--->
-
-<!--main page chart start here-->
-<!--main page chart layer2-->
-
-<!--climate start here-->
-<!--climate end here-->
 </div>
-<!--inner block end here-->
-<!---728x90--->
 
-<!--copy rights start here-->
-<div class="copyrights">
-	 <p>© All Rights Reserved </p>
-</div>	
-<!--COPY rights end here-->
+</div>
 </div>
 </div>
 <!--slider menu-->
@@ -311,5 +253,4 @@ $(".sidebar-icon").click(function() {
 <!-- mother grid end here-->
 </body>
 
-<!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:58:26 GMT -->
 </html>                     
