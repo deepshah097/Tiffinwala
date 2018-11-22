@@ -21,7 +21,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:59:10 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Login :: w3layouts</title>
+<title>Tiffinwala</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -94,46 +94,13 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			</div>			
 			<div class="login-block">
 				<form action="login.htm" method="post">
-					<input type="text" name="username" placeholder="Email" required="">${loginError}
-					<input type="password" name="password" class="lock" placeholder="Password">
-					<div class="forgot-top-grids">
-						<div class="forgot-grid">
-				<!-- 			<ul>
-								<li>
-									<input type="checkbox" id="brand1" value="">
-									<label for="brand1"><span></span>Remember me</label>
-								</li>
-							</ul> -->
-						</div>
-						<div class="forgot">
-							<!-- <a href="#">Forgot password?</a> -->
-						</div>
-						<div class="clearfix"> </div>
-					</div>
+					<input type="email" name="username" placeholder="Email" required="">${loginError}
+					<input type="password" name="password" class="lock" placeholder="Password" required/>
 					<input type="submit" name="Sign In" value="Login">	
-					<!-- <h3>Not a member?<a href="signup.html"> Sign up now</a></h3>				
-					<h2>or login with</h2>
-					<div class="login-icons">
-						<ul>
-							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>						
-						</ul>
-					</div> -->
 				</form>
-				<!-- <h5><a href="index.html">Go Back to Home</a></h5> -->
 			</div>
       </div>
 </div>
-<!--inner block end here-->
-<!---728x90--->
-
-<!--copy rights start here-->
-<div class="copyrights">
-	 <p>© 2018. All Rights Reserved </p>
-</div>	
-<!--COPY rights end here-->
-<!---728x90--->
 
 <!--scrolling js-->
 		<script src="./js/jquery.nicescroll.js"></script>
@@ -145,7 +112,3 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 
 <!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:59:10 GMT -->
 </html>
-
-
-                      
-						

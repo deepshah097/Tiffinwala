@@ -32,7 +32,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:57:22 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Tiffinwala</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -313,9 +313,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <!---728x90--->
 
 <!--copy rights start here-->
-<div class="copyrights">
+<!-- <div class="copyrights">
 	 <p>© All Rights Reserved </p>
-</div>	
+</div> -->	
 <!--COPY rights end here-->
 </div>
 </div>

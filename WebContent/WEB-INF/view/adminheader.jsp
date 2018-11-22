@@ -2,32 +2,6 @@
 <%@page import="com.vo.UserVo"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 
@@ -196,9 +170,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 									<!--<img id="logo" src="" alt="Logo"/>--> 
 								  </a><%} %> 								
 							</div>
-							<%if(uservo.getUser_flag()==1){ %>
+							<%-- <%if(uservo.getUser_flag()==1){ %>
 							<button style="background:blue;margin-top:10px;border-radius: 20px;"><a href="addAdmin.htm" style="color:white">Add New Admin</a></button>
-							<%} %>
+							<%} %> --%>
 							<div class="clearfix"> </div>
 						 </div>
 						<%if(uservo.getUser_flag()==1){ %> 
@@ -239,10 +213,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							 <div class="header-right">
 							<div class="profile_details_left"><!--notifications of menu start -->
 						 		<ul class="nofitications-dropdown">
-									<%-- <li class="dropdown head-dpdn"><span class="badge blue">${ordercnt}</span>
+									 <%-- <li class="dropdown head-dpdn"><span class="badge blue">${ordercnt}</span>
 										<a href="Viewpendingorders.htm?id=<%=uservo.getUser_id()%>"><i class="fa fa-bell"></i></a>										
-									</li> --%>	
-										
+									</li> --%>
 								</ul>
 						 	<div class="clearfix"> </div>
 							</div>
@@ -298,9 +271,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <!--slider menu-->
 <%if(uservo.getUser_flag()==1){ %>
     <div class="sidebar-menu" style="background: #650101">
+    
 		    <div class="menu">
 		      <ul id="menu" >
 		        <li id="menu-home" ><a href="index.htm"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+		        <li id="menu-home"><a href="addAdmin.htm"><i class="fa fa-plus"></i><span>Add New Admin</span></a></li>
 		        <li id="menu-home" ><a href="Viewalluser.htm"><i class="fa fa-user"></i><span>Active All User</span></a></li>
 		        <li id="menu-home" ><a href="Viewapprovetiffinwala.htm"><i class="fa fa-toggle-on"></i><span>Active Tiffinwala</span></a></li>
 		        <li id="menu-home" ><a href="Viewpendingtiffinwala.htm"><i class="fa fa-paper-plane"></i><span>Pending Tiffinwala</span></a></li>		      

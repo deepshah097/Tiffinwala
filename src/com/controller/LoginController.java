@@ -67,9 +67,11 @@ public class LoginController {
 					return ("tiffinwalaindex");	
 					}
 				else if(uservo.getUser_flag()==3) {
-					session=req.getSession();
-					session.setAttribute("user", uservo);	
-					return ("userindex");	
+//					session=req.getSession();
+//					session.setAttribute("user", uservo);	
+//					return ("userindex");	
+					req.setAttribute("loginError", "You will be Authenticate soon...");
+					return("Login");
 					}
 				
 				

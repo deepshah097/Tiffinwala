@@ -1,38 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 
 <!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:57:22 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Tiffinwala</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -198,39 +173,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<!-- /script-for sticky-nav -->
 <!--inner block start here-->
 <div class="inner-block">
-<!--market updates updates-->
-	 <%-- <div class="market-updates">
-			<div class="col-md-6 market-update-gd">
-				<div class="market-update-block clr-block-1">
-					<div class="col-md-8 market-update-left">
-						<h3>${useractivelist}</h3>
-						<h4>Total Active User</h4>
-					</div>
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-file-text-o"> </i>
-					</div>
-				  <div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class="col-md-6 market-update-gd">
-				<div class="market-update-block clr-block-2">
-				 <div class="col-md-8 market-update-left">
-					<h3>${activetiffin }</h3>
-					<h4>Total Active Tiffin-wala</h4>
-				  </div>
-					<div class="col-md-4 market-update-right">
-						<i class="fa fa-eye"> </i>
-					</div>
-				  <div class="clearfix"> </div>
-				</div>
-			</div>
-		   <div class="clearfix"> </div>
-		</div> --%>
 <!--market updates end here-->
 <!---728x90--->
 
 <!--mainpage chit-chating-->
-<button style="background-color: green;float:right;margin-right:5%;"><a href="addType.htm" style="color:white;">Insert Type</a></button>
+<button style="background:#650101;float:right;margin-right:5%;"><a href="addType.htm" style="color:white;"><i class="fa fa-plus"></i> Type</a></button>
 <div class="chit-chat-layer1">
 	<div class="col-md-12 chit-chat-layer1-left">
                <div class="work-progres">
@@ -238,13 +185,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                    View Type List
                                    
                             </div>
-                            <div class="table-responsive">
+                            <div class="table-responsive" style="margin-top:15px;">
                                 <table class="table table-hover">
                                   <thead>
                                     <tr>
-        <!--         <td>City Id
-<td>City Name
-<td colspan="2">Action -->
                                       <th>Type Id</th>
                                       <th>Type Name</th>                                   
                                       <th colspan="2">Action</th>
@@ -256,8 +200,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                   
 									<td>${n.type_id}</td>
 									<td>${n.type_name}</td>									
-									<td><a href="EditType.htm?id=${n.type_id}">edit</a></td>
-									<td><a href="deleteType.htm?id=${n.type_id}">delete</a></td>
+									<td><a href="EditType.htm?id=${n.type_id}"><i class="fa fa-pencil" style="color:black;"></i></a></td>
+									<td><a href="deleteType.htm?id=${n.type_id}"><i class="fa fa-remove" style="color:black;"></i></a></td>
 
                                   
                               </tr>
@@ -271,44 +215,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
       </div>
     
      <div class="clearfix"> </div>
-<%--      <center>
-<h1>Pending tiffinwala page dashboard</h1>
-<br>
-<table border="1">
-<tr>
-<td>Tiffin Id
-<td>Tiffin Name
-<td>City Id
-<td>City name
-<td>Address
-<td>pincode
-<td>mobile number
-<td>email
-<td>flag
-<td colspan="2">Action
-
-</tr>
-<c:forEach items="${tiffinlist}" var="n">
-<tr>
-<td>${n.tiffin_id}</td>
-<td>${n.tiffin_name}</td>
-<td>${n.cityvo.city_id}</td>
-<td>${n.cityvo.city_name}</td>
-<td>${n.tiffin_address}</td>
-<td>${n.tiffin_pincode}</td>
-<td>${n.tiffin_mobile}</td>
-<td>${n.tiffin_email}</td>
-<td>${n.tiffin_flag}</td>
-<td><a href="approveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}">Approve</a></td>
-<td><a href="disapproveflag.htm?id=${n.tiffin_id}&user_id=${n.uservo.user_id}">Disapprove</a></td>
-
-
-
-</tr>
-</c:forEach>
-</table>
-</center>
- --%></div>
+</div>
 <!--main page chit chating end here-->
 <!---728x90--->
 
@@ -321,11 +228,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <!--inner block end here-->
 <!---728x90--->
 
-<!--copy rights start here-->
-<div class="copyrights">
-	 <p>© All Rights Reserved </p>
-</div>	
-<!--COPY rights end here-->
 </div>
 </div>
 <!--slider menu-->
