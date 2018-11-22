@@ -106,7 +106,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                             <div class="chit-chat-heading">
                                   Add New Menu
                             </div>
-                            <div class="table-responsive">
+                            <div class="table-responsive" style="margin-top:15px;">
                                 <form action="savemenu.htm" method="post">
 								 <div class="form-group">								 
 								    <label>Enter Menu Items</label>
@@ -136,7 +136,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								 </div>
 								 
 								 <center>
-								 	<button type="submit" class="btn btn-primary">Add Menu</button>
+								 	<button type="submit" class="btn btn-primary" style="background:#650101">Add Menu</button>
 								 </center>
 								</form>
                   			</div>

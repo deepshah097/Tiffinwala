@@ -50,6 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
 <!--static chart-->
+<link href="./pagination/demo/css/jquery.dataTables_themeroller.css" rel="stylesheet"> 
 <script src="./js/Chart.min.js"></script>
 <!--//charts-->
 <!-- geo chart -->
@@ -204,8 +205,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                             <div class="chit-chat-heading">
                                  Past Order
                             </div>
-                            <div class="table-responsive">
-                                <table class="table table-hover">
+                            <div class="table-responsive" style="margin-top:15px">
+                                <table class="table table-hover" id="dataTable">
                                   <thead>
                                     <tr>       
                                       <th>Order Id</th>
@@ -265,6 +266,18 @@ $(".sidebar-icon").click(function() {
                 toggle = !toggle;
             });
 </script>
+<script src='./pagination/demo/js/jquery.dataTables.min.js'></script>
+
+  <script>
+  	$(function () {
+
+            $('#dataTable').dataTable({
+               // "bJQueryUI": true,
+                "sPaginationType": "full_numbers",
+        //"pageLength": 1
+            });
+         });  
+  </script>
 <!--scrolling js-->
 		<script src="./js/jquery.nicescroll.js"></script>
 		<script src="./js/scripts.js"></script>

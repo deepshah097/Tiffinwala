@@ -98,7 +98,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                             <div class="chit-chat-heading">
                                   Change Password
                             </div>
-                            <div class="table-responsive">
+                            <div class="table-responsive" style="margin-top:15px">
                                 <form action="changepassword.htm" method="post">
 								 <div class="form-group">	
 								 <input type="hidden" name ="id" value="<%=uservo.getUser_id()%>">							 
@@ -115,7 +115,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								    <input type="password" name="repass" class="form-control" required="required">
 								 </div>							
 								 <center>
-								 	<button type="submit" class="btn btn-primary">Change Password</button>
+								 	<button type="submit" class="btn btn-primary" style="background:#650101">Change Password</button>
 								 </center>
 								</form>
                   			</div>

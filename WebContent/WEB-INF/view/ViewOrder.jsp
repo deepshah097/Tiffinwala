@@ -7,7 +7,7 @@
 <!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:57:22 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Tiffinwala</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -101,6 +101,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--skycons-icons-->
 <script src="js/skycons.js"></script>
+<link href="./pagination/demo/css/jquery.dataTables_themeroller.css" rel="stylesheet"> 
 <!--//skycons-icons-->
 </head>
 <%@include file="adminheader.jsp" %>
@@ -184,7 +185,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                                  Today's Order
                             </div>
                             <div class="table-responsive">
-                                <table class="table table-hover">
+                                <table class="table table-hover" id="dataTable">
                                   <thead>
                                     <tr>       
                                       <th>Order Id</th>
@@ -250,6 +251,18 @@ $(".sidebar-icon").click(function() {
 		<script src="./js/scripts.js"></script>
 		<!--//scrolling js-->
 <script src="./js/bootstrap.js"> </script>
+<script src='./pagination/demo/js/jquery.dataTables.min.js'></script>
+
+  <script>
+  	$(function () {
+
+            $('#dataTable').dataTable({
+               // "bJQueryUI": true,
+                "sPaginationType": "full_numbers",
+        //"pageLength": 1
+            });
+         });  
+  </script>
 <!-- mother grid end here-->
 </body>
 

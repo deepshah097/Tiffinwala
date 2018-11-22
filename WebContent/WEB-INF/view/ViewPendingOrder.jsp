@@ -1,38 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html> -->
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
 
 <!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:57:22 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Tiffinwala</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -49,6 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--Google Fonts-->
 <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
+<link href="./pagination/demo/css/jquery.dataTables_themeroller.css" rel="stylesheet"> 
 <!--static chart-->
 <script src="./js/Chart.min.js"></script>
 <!--//charts-->
@@ -208,8 +184,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                             <div class="chit-chat-heading">
                                  Today's Pending Order
                             </div>
-                            <div class="table-responsive">
-                                <table class="table table-hover">
+                            <div class="table-responsive" style="margin-top:15px">
+                                <table class="table table-hover" id="dataTable">
                                   <thead>
                                     <tr>       
                                       <th>Order Id</th>
@@ -269,6 +245,18 @@ $(".sidebar-icon").click(function() {
                 toggle = !toggle;
             });
 </script>
+<script src='./pagination/demo/js/jquery.dataTables.min.js'></script>
+
+  <script>
+  	$(function () {
+
+            $('#dataTable').dataTable({
+               // "bJQueryUI": true,
+                "sPaginationType": "full_numbers",
+        //"pageLength": 1
+            });
+         });  
+  </script>
 <!--scrolling js-->
 		<script src="./js/jquery.nicescroll.js"></script>
 		<script src="./js/scripts.js"></script>

@@ -26,6 +26,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
 <!--static chart-->
 <script src="./js/Chart.min.js"></script>
+<link href="./pagination/demo/css/jquery.dataTables_themeroller.css" rel="stylesheet"> 
 <!--//charts-->
 <!-- geo chart -->
     <script src="../../../../../cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
@@ -180,8 +181,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                             <div class="chit-chat-heading">
                                   View Today's Pending Order
                             </div>
-                            <div class="table-responsive">
-                                <table class="table table-hover">
+                            <div class="table-responsive" style="margin-top:15px;">
+                                <table class="table table-hover" id="dataTable">
                                   <thead>
                                     <tr>
                                       <th>Order Id</th>
@@ -246,6 +247,19 @@ $(".sidebar-icon").click(function() {
 		<script src="./js/jquery.nicescroll.js"></script>
 		<script src="./js/scripts.js"></script>
 <script src="./js/bootstrap.js"> </script>
+<script src='./pagination/demo/js/jquery.dataTables.min.js'></script>
+
+  <script>
+  	$(function () {
+
+            $('#dataTable').dataTable({
+               // "bJQueryUI": true,
+                "sPaginationType": "full_numbers",
+        //"pageLength": 1
+            });
+         });  
+  </script>
+
 </body>
 
 </html>                     

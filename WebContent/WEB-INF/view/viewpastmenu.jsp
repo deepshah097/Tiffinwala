@@ -7,7 +7,7 @@
 <!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:57:22 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Tiffinwala</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -20,7 +20,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--js-->
 <script src="./js/jquery-2.1.1.min.js"></script> 
 <!--icons-css-->
-<link href="./css/font-awesome.css" rel="stylesheet"> 
+<link href="./css/font-awesome.css" rel="stylesheet">
+<link href="./pagination/demo/css/jquery.dataTables_themeroller.css" rel="stylesheet">  
 <!--Google Fonts-->
 <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
@@ -183,8 +184,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                             <div class="chit-chat-heading">
                                   View Past Menu
                             </div>
-                            <div class="table-responsive">
-                                <table class="table table-hover">
+                            <div class="table-responsive" style="margin-top:15px">
+                                <table class="table table-hover" id="dataTable">
                                   <thead>
                                     <tr>
                                       <th>Menu Id</th>
@@ -241,6 +242,19 @@ $(".sidebar-icon").click(function() {
 <!--scrolling js-->
 		<script src="./js/jquery.nicescroll.js"></script>
 		<script src="./js/scripts.js"></script>
+	<script src='./pagination/demo/js/jquery.dataTables.min.js'></script>
+
+  <script>
+  	$(function () {
+
+            $('#dataTable').dataTable({
+               // "bJQueryUI": true,
+                "sPaginationType": "full_numbers",
+        //"pageLength": 1
+            });
+         });  
+  </script>
+		
 		<!--//scrolling js-->
 <script src="./js/bootstrap.js"> </script>
 <!-- mother grid end here-->

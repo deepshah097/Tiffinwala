@@ -7,7 +7,7 @@
 <!-- Mirrored from p.w3layouts.com/demos/28-03-2016/shoppy/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Oct 2018 15:57:22 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Tiffinwala</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -27,6 +27,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--static chart-->
 <script src="./js/Chart.min.js"></script>
 <!--//charts-->
+<link href="./pagination/demo/css/jquery.dataTables_themeroller.css" rel="stylesheet"> 
 <!-- geo chart -->
     <script src="../../../../../cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
     <script>window.modernizr || document.write('<script src="lib/modernizr/modernizr-custom.html"><\/script>')</script>
@@ -183,7 +184,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                             <div class="chit-chat-heading">
                                   view current menu
                             </div>
-                            <div class="table-responsive">
+                            <div class="table-responsive" style="margin-top:15px">
                                 <table class="table table-hover">
                                   <thead>
                                     <tr>
@@ -205,7 +206,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 									<td>${n.menu_price}</td>
 									<td>${n.menu_desc}</td>
 									<td>${n.typevo.type_name}</td>
-									<td><button style="color:white;background:red;border-radius: 20px"><a style="color:white;"" href="approvemenucurrent.htm?id=${n.menu_id}&tid1=${n.tiffinvo.tiffin_id }">Move to Past</a></button></td>
+									<td><a href="approvemenucurrent.htm?id=${n.menu_id}&tid1=${n.tiffinvo.tiffin_id }" title="Move to Past Order"><i class="fa fa-arrow-circle-left"></i></a></td>
 
                               </tr>
                               
